@@ -1489,6 +1489,28 @@
       }
     ]
   },
+  "agemys.org": {
+    "_name": "AGE动漫",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/update",
+          "/"
+        ],
+        "target": "/agefans/update"
+      },
+      {
+        "title": "番剧详情",
+        "docs": "https://docs.rsshub.app/anime.html#age-dong-man",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/agefans/detail/:id"
+      }
+    ]
+  },
   "aotter.net": {
     "_name": "電獺少女",
     "agirls": [
@@ -1657,6 +1679,14 @@
         "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
         "source": [
           "/data/search",
+          "/"
+        ]
+      },
+      {
+        "title": "专题",
+        "docs": "https://docs.rsshub.app/reading.html#ai-si-xiang",
+        "source": [
+          "/zhuanti",
           "/"
         ]
       },
@@ -2873,10 +2903,16 @@
         "target": "/bilibili/online"
       },
       {
-        "title": "bilibili热搜",
+        "title": "热搜",
         "docs": "https://docs.rsshub.app/social-media.html#bilibili",
         "source": "/",
         "target": "/bilibili/hot-search"
+      },
+      {
+        "title": "频道排行榜",
+        "docs": "https://docs.rsshub.app/social-media.html#bilibili",
+        "source": "/v/channel/:channelid/",
+        "target": "/bilibili/channel/:channelid/hot"
       }
     ],
     "space": [
@@ -3380,6 +3416,20 @@
       }
     ]
   },
+  "blizzard.com": {
+    "_name": "Blizzard",
+    "news": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/game.html#blizzard",
+        "source": [
+          "/:language/:category?",
+          "/:language"
+        ],
+        "target": "/blizzard/news/:language/:category?"
+      }
+    ]
+  },
   "theblockbeats.info": {
     "_name": "律动",
     "rszhaopin": [
@@ -3545,6 +3595,16 @@
           "/"
         ],
         "target": "/bse/:category?/:keyword?"
+      }
+    ]
+  },
+  "bsky.app": {
+    "_name": "Bluesky",
+    ".": [
+      {
+        "title": "关键词",
+        "docs": "https://docs.rsshub.app/social-media.html#bluesky-bsky",
+        "source": "/search"
       }
     ]
   },
@@ -3881,6 +3941,18 @@
           "/"
         ],
         "target": "/cau/yjs"
+      }
+    ]
+  },
+  "cbaigui.com": {
+    "_name": "纪妖",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-yao-tong-yong",
+        "source": [
+          "/"
+        ]
       }
     ]
   },
@@ -4477,6 +4549,14 @@
           "/:user/:repo/:type/:number"
         ],
         "target": "/github/comments/:user/:repo/:number"
+      },
+      {
+        "title": "Issue & Pull Request comments",
+        "docs": "https://docs.rsshub.app/programming.html#github",
+        "source": [
+          "/:user/:repo/:type"
+        ],
+        "target": "/github/comments/:user/:repo"
       },
       {
         "title": "仓库 Contributors",
@@ -5730,6 +5810,12 @@
   },
   "dhu.edu.cn": {
     "_name": "东华大学",
+    "gs": [
+      {
+        "title": "研究生院通知",
+        "docs": "https://docs.rsshub.app/university.html#dong-hua-da-xue"
+      }
+    ],
     "jw": [
       {
         "title": "教务处通知",
@@ -9366,6 +9452,16 @@
           "/"
         ]
       }
+    ],
+    "wsbs.wgj": [
+      {
+        "title": "上海市文旅局审批公告",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-wen-lv-ju-shen-pi-gong-gao",
+        "source": [
+          "/"
+        ],
+        "target": "/gov/shanghai/wgj"
+      }
     ]
   },
   "shaanxi.gov.cn": {
@@ -10793,6 +10889,57 @@
       }
     ]
   },
+  "hunau.edu.cn": {
+    "_name": "湖南农业大学",
+    "gfxy": [
+      {
+        "title": "公共管理与法学学院",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ],
+    "ied": [
+      {
+        "title": "国际交流与合作处",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "/xwzx/ggtz",
+          "/:type/:category"
+        ],
+        "target": "/:type/:category"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ],
+    "xky": [
+      {
+        "title": "信息与智能科学技术学院",
+        "docs": "https://docs.rsshub.app/university.html#hu-nan-nong-ye-da-xue",
+        "source": [
+          "/",
+          "tzgg_8472",
+          "/:category"
+        ],
+        "target": "/:category"
+      }
+    ]
+  },
   "huoxian.cn": {
     "_name": "火线",
     "zone": [
@@ -11781,17 +11928,19 @@
     "_name": "煎蛋",
     ".": [
       {
-        "title": "首页",
-        "docs": "https://docs.rsshub.app/picture.html#jian-dan-shou-ye",
+        "title": "首页/板块/热榜",
+        "docs": "https://docs.rsshub.app/picture.html#jian-dan",
         "source": [
           "/:category",
           "/"
         ],
         "target": "/jandan/:category?"
-      },
+      }
+    ],
+    "i": [
       {
-        "title": "板块",
-        "docs": "https://docs.rsshub.app/picture.html#jian-dan-ban-kuai",
+        "title": "首页/板块/热榜",
+        "docs": "https://docs.rsshub.app/picture.html#jian-dan",
         "source": [
           "/:category",
           "/"
@@ -12958,6 +13107,14 @@
         "docs": "https://docs.rsshub.app/multimedia.html#javdb-pian-shang",
         "source": [
           "/makers/:id",
+          "/"
+        ]
+      },
+      {
+        "title": "清单",
+        "docs": "https://docs.rsshub.app/multimedia.html#javdb-qing-dan",
+        "source": [
+          "/lists/:id/",
           "/"
         ]
       }
@@ -16735,6 +16892,15 @@
       }
     ]
   },
+  "npr.org": {
+    "_name": "NPR",
+    ".": [
+      {
+        "title": "全文 RSS",
+        "docs": "https://docs.rsshub.app/traditional-media.html#npr"
+      }
+    ]
+  },
   "ntdtv.com": {
     "_name": "新唐人电视台",
     "www": [
@@ -17297,7 +17463,7 @@
         "source": [
           "/"
         ],
-        "target": "/ocu/it"
+        "target": "/ouc/it"
       },
       {
         "title": "信息科学与工程学院研究生招生通知公告",
@@ -17307,7 +17473,29 @@
           "/16619/list.htm",
           "/"
         ],
-        "target": "/ocu/it/postgraduate"
+        "target": "/ouc/it/postgraduate"
+      }
+    ],
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-hai-yang-da-xue",
+        "source": [
+          "/",
+          "/6517/list.htm"
+        ],
+        "target": "/ouc/jwc"
+      }
+    ],
+    "jwgl": [
+      {
+        "title": "选课信息教务通知",
+        "docs": "https://docs.rsshub.app/university.html#zhong-guo-hai-yang-da-xue",
+        "source": [
+          "/cas/login.action",
+          "/public/SchoolNotice.jsp"
+        ],
+        "target": "/ouc/jwgl"
       }
     ],
     "yz": [
@@ -17317,7 +17505,7 @@
         "source": [
           "/5926/list.htm"
         ],
-        "target": "/ocu/yjs"
+        "target": "/ouc/yjs"
       }
     ]
   },
@@ -18591,6 +18779,20 @@
       }
     ]
   },
+  "rawkuma.com": {
+    "_name": "Rawkuma",
+    ".": [
+      {
+        "title": "Manga",
+        "docs": "https://docs.rsshub.app/anime.html#rawkuma-manga",
+        "source": [
+          "/manga/:id",
+          "/"
+        ],
+        "target": "/rawkuma/manga/:id"
+      }
+    ]
+  },
   "readhub.cn": {
     "_name": "Readhub",
     ".": [
@@ -19367,6 +19569,15 @@
       }
     ]
   },
+  "sec-wiki.com": {
+    "_name": "SecWiki-安全维基",
+    "www": [
+      {
+        "title": "最新周刊",
+        "docs": "https://docs.rsshub.app/other.html#secwiki-an-quan-wei-ji"
+      }
+    ]
+  },
   "secrss.com": {
     "_name": "安全内参",
     ".": [
@@ -19845,6 +20056,16 @@
         "target": "/shiep/jwc/:id"
       }
     ],
+    "jxfz": [
+      {
+        "title": "电力装备设计与制造虚拟仿真中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/jxfz/:id"
+      }
+    ],
     "kczx": [
       {
         "title": "能源电力科创中心",
@@ -19915,6 +20136,16 @@
         "target": "/shiep/news/:id"
       }
     ],
+    "nydlzk": [
+      {
+        "title": "能源电力智库",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/nydlzk/:id"
+      }
+    ],
     "office": [
       {
         "title": "校长办公室（档案馆）",
@@ -19923,6 +20154,16 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/office/:id"
+      }
+    ],
+    "rpstec": [
+      {
+        "title": "国家新能源电力系统实验教学示范中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/rpstec/:id"
       }
     ],
     "rsc": [
@@ -19973,6 +20214,16 @@
           "/:id/list.htm"
         ],
         "target": "/shiep/slxy/:id"
+      }
+    ],
+    "spgc": [
+      {
+        "title": "智能发电实验教学中心",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/spgc/:id"
       }
     ],
     "sysyzcglc": [
@@ -20105,6 +20356,16 @@
         "target": "/shiep/zdhxy/:id"
       }
     ],
+    "ztjy": [
+      {
+        "title": "学习路上",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-dian-li-da-xue",
+        "source": [
+          "/:id/list.htm"
+        ],
+        "target": "/shiep/ztjy/:id"
+      }
+    ],
     "zs": [
       {
         "title": "本科招生网",
@@ -20203,6 +20464,29 @@
         "docs": "https://docs.rsshub.app/design.html#shopping-design",
         "source": "/post",
         "target": "/shoppingdesign/posts"
+      }
+    ]
+  },
+  "shu.edu.cn": {
+    "_name": "上海大学",
+    "jwb": [
+      {
+        "title": "教务处通知公告",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-da-xue",
+        "source": [
+          "/index/:type"
+        ],
+        "target": "/shu/jwb/:type"
+      }
+    ],
+    "www": [
+      {
+        "title": "官网信息",
+        "docs": "https://docs.rsshub.app/university.html#shang-hai-da-xue",
+        "source": [
+          "/:type"
+        ],
+        "target": "/shu/:type"
       }
     ]
   },
@@ -23378,6 +23662,19 @@
           "/"
         ],
         "target": "/v1tx"
+      }
+    ]
+  },
+  "v2rayshare.com": {
+    "_name": "V2rayShare",
+    ".": [
+      {
+        "title": "免费节点",
+        "docs": "https://docs.rsshub.app/other.html#v2rayshare",
+        "source": [
+          "/"
+        ],
+        "target": "/v2rayshare"
       }
     ]
   },
